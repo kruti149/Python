@@ -1,2 +1,2 @@
 # Python
-Python Essentials Programming
+Learning Python - Cisco Networking Academy Lab Projects

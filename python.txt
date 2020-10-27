@@ -1,0 +1,40 @@
+x = -1
+x = float(x)
+y = (3 * x ** 3) - (2 * x ** 2) + (3 * x) -1
+print("y =", y)
+
+
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+# put your code here
+
+mins=mins+dura
+
+if (mins > 60):
+    TempH=mins//60
+    mins=mins%60
+    hour=hour+TempH
+elif (mins < 60):
+    print ("small");
+
+if (hour > 24):
+    hour=hour%24
+    
+    
+print (hour)
+print (mins)
+
+
+# put your code here
+mins = mins + dura
+updatedhr = dura // 60
+print ("updated hour value is ", updatedhr)
+
+updatedmin = dura % 60
+print ("updated min values is", updatedmin)
+
+finalhr = hour + updatedhr
+finalmin = mins + updatedmin
+print (finalhr, finalmin, sep=":")
